@@ -1,0 +1,48 @@
+[package]
+name = "xaml"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies.windows-bindgen]
+path = "/git/windows-rs/crates/libs/bindgen"
+
+[dependencies.windows-core]
+path = "/git/windows-rs/crates/libs/core"
+
+[dependencies.windows]
+path = "/git/windows-rs/crates/libs/windows"
+features = [
+    "deprecated",
+    "ApplicationModel_Activation",
+    "ApplicationModel_Background",
+    "ApplicationModel_Contacts",
+    "ApplicationModel_Core",
+    "ApplicationModel_DataTransfer_DragDrop",
+    "ApplicationModel_Search",
+    "Devices_Geolocation",
+    "Devices_Input",
+    "Foundation_Collections",
+    "Foundation_Numerics",
+    "Globalization",
+    "Graphics_Imaging",
+    "Graphics_Printing",
+    "Media_Capture",
+    "Media_Casting",
+    "Media_Core",
+    "Media_Playback",
+    "Media_PlayTo",
+    "Media_Protection",
+    "Services_Maps_LocalSearch",
+    "Storage_Streams",
+    "System",
+    "UI_Composition",
+    "UI_Core",
+    "UI_Input_Inking",
+    "UI_Text",
+    "UI_WindowManagement",
+    "Web_Http",
+]
+
+[features]
+default = []
+deprecated = []
